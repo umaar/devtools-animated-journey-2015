@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>DevTools talk</title>
+
+		<meta name="description" content="DevTools talk by Umar Hansa">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<link rel="stylesheet" href="css/main.css">
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-31819122-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+	</head>
+
+	<body>
+
+<div class="reveal">
+
+<div class="slides">
+
+<section class="intro">
+	<h1>DevTools</h1>
+	<h3>An animated journey</h3>
+	<p>
+		<small>Created by <a href="https://umaar.com/dev-tips">Umar Hansa</a> / <a href="http://twitter.com/umaar">@umaar</a></small>
+	</p>
+</section>
+
+<section>
+	<small>Just a quick thank you</small>
+	<p><small class="fragment">To you for being here (especially at a multi-track conf)</small></p>
+	</p><small class="fragment">To the organisers for putting together this conference</small></p>
+</section>
+
+<section>
+	<h1>About me</h1>
+	<h3>And some stuff I've done</h3>
+</section>
+
+<section class="about-talks" data-background="white">
+	<h3>Talks</h3>
+	<ul>
+		<li>
+			<img src="img/front-trends.png" alt="">
+			<p></p>
+		</li>
+		<li>
+			<img src="img/devfest.png" alt="">
+			<p></p>
+		</li>
+		<li>
+			<img src="img/apps-world.png" alt="">
+			<p></p>
+		</li>
+		<li>
+			<img src="img/gds.jpg" alt="">
+			<p></p>
+		</li>
+		<li>
+			<img src="img/front-end-zurich.png" alt="">
+		</li>
+		<li>
+			<svg viewBox="0 0 125.6 139.3" class="menu-title-logo">
+			<g>
+				<path fill="#EC6310" d="M123.8 21l-59.3-21v66.3z"></path>
+				<path fill="#008491" d="M64.5 139.3l59.3-21-59.3-45.2z"></path>
+				<path fill="#4AB8AA" d="M1.8 118.3l59.3 21v-66.2z"></path>
+				<path fill="#D14090" d="M65.6 69.7l60 45.8v-91.6z"></path>
+				<path fill="#009DDB" d="M0 23.9v91.6l60-45.8z"></path>
+				<path fill="#FFD200" d="M61.1 0l-59.3 21 59.3 45.3z"></path>
+			</g>
+			</svg>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h1>Dev Tips</h1>
+	<h3>A developer tip, in the form of a gif, in your inbox each week</h3>
+	<a href="https://umaar.com/dev-tips/">umaar.com/dev-tips</a>
+</section>
+
+<section data-background="img/my-vid-1.png" data-background-size="1024px"></section>
+<section data-background="img/my-vid-2.png" data-background-size="1024px"></section>
+
+<section data-background="img/tweet-1.png" data-background-size="1024px"></section>
+
+<section data-background="img/tweet-2.png" data-background-size="1024px"></section>
+
+<section>
+	<h3>Why subscribe?</h3>
+	<ul>
+		<li>
+			It's free
+		</li>
+		<li>You can normally grasp enough through the gif alone</li>
+		<li>Keep up to date with DevTools</li>
+		<li>Occasional screencast videos</li>
+	</ul>
+</section>
+
+<section>
+	<h1>What's in this talk?</h1>
+	<ul>
+		<li>An introductory look at a few Chrome DevTools panels</li>
+		<li>Brand new features</li>
+		<li>Recap</li>
+	</ul>
+</section>
+
+<section>
+	<h1>Elements Panel</h1>
+</section>
+
+<section>
+	<h1>DOM Tree</h1>
+</section>
+
+<section>
+	<div class="panel-intro-container">
+		<img src="img/panel-intros/elements.png" alt="">
+		<img class="panel-intro-dom-tree" src="img/panel-intros/elements-dom-tree.png" alt="">
+	</div>
+</section>
+
+<section>
+	<h1>Inspect Element</h1>
+</section>
+
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/inspect.mp4"></video>
+</section>
+
+<section>
+	<h1>Edit the DOM</h1>
+	<ul>
+		<li>Content</li>
+		<li>HTML Tags</li>
+		<li>Attributes</li>
+		<li>Attribute values</li>
+	</ul>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/edit-dom.mp4"></video>
+</section>
+
+
+<section>
+	<h1>Styles Pane</h1>
+	<h3>View and edit CSS</h3>
+</section>
+
+<section>
+	<div class="panel-intro-container">
+		<img src="img/panel-intros/elements.png" alt="">
+		<img class="panel-intro-styles-pane" src="img/panel-intros/elements-style-pane.png" alt="">
+	</div>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/styles-pane.mp4"></video>
+</section>
+
+<section>
+	<h1>DOM Breakpoints</h1>
+	<h3>Debugging from the outside in</h3>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/dom-breakpoints.mp4"></video>
+</section>
+
+<section>
+	<h1>View element event listeners</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/event-listeners.mp4"></video>
+</section>
+
+<section>
+	<h2>DevTools now supports jQuery <a target="_blank" href="https://umaar.com/dev-tips/71-jquery-event-listeners/">natively</a></h2>
+	<h3>In Canary</h3>
+</section>
+
+<section>
+	<h1>Network Panel</h1>
+</section>
+
+<section>
+	<h1>Record + Details View</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/network/record.mp4"></video>
+</section>
+
+<section>
+	<h1>Searching + Filtering</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/network/search-filter.mp4"></video>
+</section>
+
+<section>
+	<h1>Sources Panel</h1>
+</section>
+
+<section>
+	<h1>Snippets</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/sources/snippets.mp4"></video>
+</section>
+
+<section>
+	<h1>Source Editing + Local modifications</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/sources/source-editing-local-mods.mp4"></video>
+</section>
+
+<section>
+	<h1>Workspaces</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/sources/workspaces.mp4"></video>
+</section>
+
+<section>
+	<h3>This stuff is not perfect.</h3>
+	<p><small>yet</small></p>
+	<img src="img/not-100-percent.gif" alt="">
+</section>
+
+<section>
+	<h1>Live Edit JS</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/sources/live-edit-js.mp4"></video>
+</section>
+
+<section>
+	<h1>Live Edit</h1>
+	<ul>
+		<li>Raw text changes are injected back into V8</li>
+		<li>Comparisons are made between new.js and old.js</li>
+		<li>V8 compiles the changed JS and patches old.js with the changes</li>
+	</ul>
+</section>
+
+
+<section>
+	<h1>Timeline Panel</h1>
+</section>
+
+<section>
+	<h1>Timeline recording + paint profiler</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/timeline/timeline-recording.mp4"></video>
+</section>
+
+<section>
+	<h1>Paint rectangles</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/timeline/paint-rectangles.mp4"></video>
+</section>
+
+
+<section>
+	<h1>Audits Panel</h1>
+	<h2>Try PageSpeed Insights and WebPageTest for now</h2>
+</section>
+
+<section>
+	<h1>What's new in Chrome DevTools</h1>
+	<h3>And just some lesser known features</h3>
+</section>
+
+<section>
+	<h1>- Warning -</h1>
+	<h3>Some features are experimental</h3>
+	<small>Experimental features can change, vanish, or break</small>
+</section>
+
+<section>
+	<h1>Timeline Panel</h1>
+</section>
+
+<section>
+	<h1>Costly Functions</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/timeline/costly-functions.mp4"></video>
+</section>
+
+<section>
+	<h1>Security Panel</h1>
+</section>
+
+<section>
+	<img src="img/security-panel.png" alt="">
+</section>
+
+<section>
+	<h1>Audits Panel</h1>
+	<h3>Thanks to <a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Accessibility Developer Tools</a></h3>
+</section>
+
+<section>
+	<h1>Accessibility Audit</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/audits/accessibility.mp4"></video>
+</section>
+
+
+<section>
+	<h1>Misc</h1>
+</section>
+
+<section>
+	<h1>Promise Inspector</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/misc/promise-inspector.mp4"></video>
+</section>
+
+
+<section>
+	<h1>Network Panel</h1>
+</section>
+
+
+<section>
+	<h1>Filmstrip</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/network/filmstrip.mp4"></video>
+</section>
+
+<section>
+	<h1>Custom Throttling Profiles</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/network/custom-throttling-profiles.mp4"></video>
+</section>
+
+<section>
+	<a target="_blank" href="https://umaar.com/dev-tips/68-block-requests/">Block requests - Posted recently</a>
+</section>
+
+<section>
+	<a target="_blank" href="https://umaar.com/dev-tips/72-drag-drop-panels/">Also, drag and drop panels</a>
+</section>
+
+<section>
+	<h1>Elements Panel</h1>
+</section>
+
+<section>
+	<h1>DOM Toolbar + Layout Editor</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/dom-toolbar-layout-editor.mp4"></video>
+</section>
+
+<section>
+	<h1>Colour picker + Colour palettes</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/colour-picker-contrast-ratio.mp4"></video>
+</section>
+
+<section>
+	<h1>Easing previews</h1>
+	<h1>Cubic bezier editor</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/easing.mp4"></video>
+</section>
+
+<section>
+	<h1>Animation Inspector</h1>
+</section>
+
+<section>
+	<video data-autoplay preload="none" loop class="stretch" src="vid/elements/animation-inspector.mp4"></video>
+</section>
+
+<section>
+	<h1>Recap</h1>
+</section>
+
+<section>
+	<h1>Get to know your browser developer tools</h1>
+</section>
+
+<section>
+	<h3>Invest the time + effort to become familiar with the IDE-style features</h3>
+	<small>E.g. Workspaces</small>
+</section>
+
+<section>
+	<p>You'll mess up a few times before it starts working</p>
+	<img src="img/fail.gif" alt="">
+</section>
+
+<section>
+	<h1>Using a compiler for your CSS?</h1>
+	<h1>A transpiler for your JS?</h1>
+	<h3>Try Source Maps</h3>
+</section>
+
+<section>
+	<h1>Finishing Up</h1>
+</section>
+
+<section>
+	<h1>Encourage your team to adopt DevTools workflows</h1>
+</section>
+
+<section>
+	<h1>Product Manager</h1>
+	<h3>Network Filmstrip: Compare your site against competitors</h3>
+</section>
+
+<section>
+	<h1>Tester</h1>
+	<h3>DevTools can generate CSS selectors for your automated browser tests</h3>
+</section>
+
+<section>
+	<h1>DevOps</h1>
+	<h3>Network recording to check page weight + large asset resources</h3>
+	<h3>Check caching on resource response headers</h3>
+</section>
+
+<section>
+	<h1>Designer</h1>
+	<h3>Layout Editor</h3>
+	<h3>Experiment with generated colour palettes to find what else works</h3>
+</section>
+
+<section>
+	<p>DevTools Deep Dream</p>
+	<img src="img/deep-dream.jpg" alt="">
+</section>
+
+<section>
+	<img src="img/einstein.jpg" alt="">
+</section>
+
+<section>
+	<h1>Can I help?</h1>
+	<ul>
+		<li>Workshops</li>
+		<li>Training</li>
+		<li>Dev Tips issue tracker</li>
+	</ul>
+</section>
+
+<section>
+	<p>@umaar on twitter</p>
+	<p><a href="https://umaar.com/dev-tips">umaar.com/dev-tips</a> or search for "umar dev tips"</p>
+</section>
+
+<section class="bye">
+	<img src="img/thanks-and-bye.gif" alt="">
+	<p>Bye!</p>
+</section>
+
+</div>
+
+</div><!-- .reveal -->
+		<script src="js/jquery.min.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/bounce.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/main.js"></script>
+
+
+		<script>
+			Reveal.initialize({
+				width: 1280,
+			    height: 720,
+				slideNumber: true,
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transitionSpeed: 'fast',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
